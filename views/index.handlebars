@@ -9,40 +9,42 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-4">
+            <h2>Click to EAT DA BURGER</h2>
             {{#each burgers}}
-            {{#unless this.devoured}}
+          {{#unless this.devoured}}
             <div>
-                <form action="/burgers.{{this.id}}_method=PUT" method="POST">
-                    <button type="submit" class="burgerAvailable">{{this.burger_name}}</button>
-                </form>
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class="btn btn-warning"> {{this.burger_name}}</button>
+              </form>
             </div>
-            {{/unless}}
-            {{/each}}
+          {{/unless}}
+        {{/each}}
         </div>
 
         <div class="col-xs-4">
-            <img src="../public/assets/img/burger.png">
+            <img src="assets/img/burger.png" class="img-responsive">
         </div>
 
         <div class="col-xs-4">
-            {{#each burgers}}
-            {{#if this.devoured}}
-                <div class="burgerEaten">
-                    <div>
-                        {{this.burger_name}}
-                    </div>
-                </div>
-            {{/if}}
-            {{/each}}
+            <h2>Burgers Enjoyed: </h2>
+           {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burger-eaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
         </div>
     </div>
 
-    <h2>Add a Burger</h2>
-    <div class="row">
+    <h2 class="add">Add a Burger</h2>
+    <div class="row add-burger">
         <div class="col-xs-12">
             <form action="/burgers" method="POST">
             <input type="text" id="name" name="burger_name" placeholder="What'll ya have?">
-            <button type="submit" class="add-burger-btn">Add this burger!</button>
+            <button type="submit" class="btn btn-warning">Add this burger!</button>
             </form>
         </div>
     </div>

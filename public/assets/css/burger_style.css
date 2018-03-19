@@ -1,0 +1,71 @@
+html {
+    background: url("../img/diner.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron, body {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-family: 'Limelight', cursive;
+    text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+.jumbotron h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #fff;
+    text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+.btn-warning{
+    margin: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    letter-spacing: .1em;
+}
+
+.add {
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.add-burger {
+    margin-left: 33%;
+}
+
+.burger-eaten{
+    font-family: 'Limelight', cursive;
+    font-size: 25px;
+    letter-spacing: .1em;
+    color: #f0ad4e;
+    text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
